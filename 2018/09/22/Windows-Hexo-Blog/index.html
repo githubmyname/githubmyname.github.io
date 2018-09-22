@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://i.loli.net/2018/09/22/5ba63048bab3d.png">
 <meta property="og:image" content="https://i.loli.net/2018/09/22/5ba63172822ca.png">
 <meta property="og:image" content="https://i.loli.net/2018/09/22/5ba634e0f0f1e.png">
-<meta property="og:updated_time" content="2018-09-22T12:40:44.094Z">
+<meta property="og:updated_time" content="2018-09-22T16:03:18.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows-Hexo-Blog">
 <meta name="twitter:description" content="基于Windows的Hexo博客搭建一、准备工作1、安装GitGit是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。 记得勾选新建Git Bash  2、安装Node.jsnpm安装hexo 选择下载的时候：LTS为长期支持版本，Current为当前最新版本，我选择了LTS版的安装 配置环境变量：在系统变量的Path里添加git的安装路径（没有添加path会报错：">
@@ -112,7 +112,7 @@
 <p><a href="https://i.loli.net/2018/09/22/5ba62a776dff4.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/09/22/5ba62a776dff4.png" alt="hexo-version.png"></a></p>
 <h2 id="三、第一篇博客"><a href="#三、第一篇博客" class="headerlink" title="三、第一篇博客"></a>三、第一篇博客</h2><h6 id="1、初始化hexo"><a href="#1、初始化hexo" class="headerlink" title="1、初始化hexo"></a>1、初始化hexo</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
 <h6 id="2、新建一篇博客"><a href="#2、新建一篇博客" class="headerlink" title="2、新建一篇博客"></a>2、新建一篇博客</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new MyFirstBlog</span><br></pre></td></tr></table></figure>
-<h6 id="3、在D-Blog-source-posts下可以找到新建的博客MyFirstBlog-md这是一个-md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器-这里推荐一个叫Typora的markdown的编辑器，很容易上手。"><a href="#3、在D-Blog-source-posts下可以找到新建的博客MyFirstBlog-md这是一个-md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器-这里推荐一个叫Typora的markdown的编辑器，很容易上手。" class="headerlink" title="3、在D:\Blog\source_posts下可以找到新建的博客MyFirstBlog.md这是一个.md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器,这里推荐一个叫Typora的markdown的编辑器，很容易上手。"></a>3、在D:\Blog\source_posts下可以找到新建的博客MyFirstBlog.md这是一个.md的MarkDown文件，技术栈：<a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown</a>，或者使用markdown编辑器,这里推荐一个叫<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>的markdown的编辑器，很容易上手。</h6><h6 id="4、生成静态文件、"><a href="#4、生成静态文件、" class="headerlink" title="4、生成静态文件、"></a>4、生成静态文件、</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="3、在D-Blog-source-posts下可以找到新建的博客MyFirstBlog-md这是一个-md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器-这里推荐一个叫Typora的markdown的编辑器，很容易上手。"><a href="#3、在D-Blog-source-posts下可以找到新建的博客MyFirstBlog-md这是一个-md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器-这里推荐一个叫Typora的markdown的编辑器，很容易上手。" class="headerlink" title="3、在D:\Blog\source_posts下可以找到新建的博客MyFirstBlog.md这是一个.md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器,这里推荐一个叫Typora的markdown的编辑器，很容易上手。"></a>3、在D:\Blog\source_posts下可以找到新建的博客MyFirstBlog.md这是一个.md的MarkDown文件，技术栈：<a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown</a>，或者使用markdown编辑器,这里推荐一个叫<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>的markdown的编辑器，很容易上手。</h6><h6 id="4、生成静态文件、"><a href="#4、生成静态文件、" class="headerlink" title="4、生成静态文件、"></a>4、生成静态文件、</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
 <h6 id="5、实现本地预览"><a href="#5、实现本地预览" class="headerlink" title="5、实现本地预览"></a>5、实现本地预览</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>如果不成功应先安装hexo-server，因为Hexo3.0把服务器独立成了个别模块</p>
 <p>安装hexo-server，命令</p>
@@ -161,7 +161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/22/Windows-Hexo-Blog/" data-id="cjmdmbr720000potw7fmu3skk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/22/Windows-Hexo-Blog/" data-id="cjmdmjihh0000o0twryu07hm5" class="article-share-link">Share</a>
       
       
     </footer>
