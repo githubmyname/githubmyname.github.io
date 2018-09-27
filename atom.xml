@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>FissionCommittee</title>
+  
+  <subtitle>Enslaved the world</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-09-23T04:49:06.328Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>liu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows-Hexo-Blog</title>
+    <link href="http://yoursite.com/2018/09/22/Windows-Hexo-Blog/"/>
+    <id>http://yoursite.com/2018/09/22/Windows-Hexo-Blog/</id>
+    <published>2018-09-22T08:46:35.000Z</published>
+    <updated>2018-09-23T04:49:06.328Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基于Windows的Hexo博客搭建"><a href="#基于Windows的Hexo博客搭建" class="headerlink" title="基于Windows的Hexo博客搭建"></a>基于Windows的Hexo博客搭建</h1><h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><h6 id="1、安装Git"><a href="#1、安装Git" class="headerlink" title="1、安装Git"></a>1、安装<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">Git</a></h6><p>Git是一个开源的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。</p><p><strong>记得勾选新建Git Bash</strong></p><p><img src="https://i.loli.net/2018/09/22/5ba60598337e6.png" alt=""></p><h6 id="2、安装Node-js"><a href="#2、安装Node-js" class="headerlink" title="2、安装Node.js"></a>2、安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></h6><p>npm安装hexo</p><p>选择下载的时候：LTS为长期支持版本，Current为当前最新版本，我选择了LTS版的安装</p><p>配置环境变量：在系统变量的Path里添加git的安装路径（没有添加path会报错：command not found)</p><p>桌面任意位置右键git bash</p><p>node -v显示版本信息则安装成功</p><h2 id="二、安装Hexo轻量化博客框架"><a href="#二、安装Hexo轻量化博客框架" class="headerlink" title="二、安装Hexo轻量化博客框架"></a>二、安装Hexo轻量化博客框架</h2><p>新建一个文件夹存储搭建博客所需的配置文件，例如D:\Blog，打开Blog文件夹右键Git Bash Here安装Hexo框架</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo</span><br></pre></td></tr></table></figure><p>检查是否安装成功：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -version</span><br></pre></td></tr></table></figure><p>显示版本信息即表示安装成功</p><p><a href="https://i.loli.net/2018/09/22/5ba62a776dff4.png" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/09/22/5ba62a776dff4.png" alt="hexo-version.png"></a></p><h2 id="三、第一篇博客"><a href="#三、第一篇博客" class="headerlink" title="三、第一篇博客"></a>三、第一篇博客</h2><h6 id="1、初始化hexo"><a href="#1、初始化hexo" class="headerlink" title="1、初始化hexo"></a>1、初始化hexo</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure><h6 id="2、新建一篇博客"><a href="#2、新建一篇博客" class="headerlink" title="2、新建一篇博客"></a>2、新建一篇博客</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new MyFirstBlog</span><br></pre></td></tr></table></figure><h6 id="3、在D-Blog-source-posts下可以找到新建的博客MyFirstBlog-md这是一个-md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器-这里推荐一个叫Typora的markdown的编辑器，很容易上手。"><a href="#3、在D-Blog-source-posts下可以找到新建的博客MyFirstBlog-md这是一个-md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器-这里推荐一个叫Typora的markdown的编辑器，很容易上手。" class="headerlink" title="3、在D:\Blog\source\_posts下可以找到新建的博客MyFirstBlog.md这是一个.md的MarkDown文件，技术栈：Markdown，或者使用markdown编辑器,这里推荐一个叫Typora的markdown的编辑器，很容易上手。"></a>3、在D:\Blog\source\_posts下可以找到新建的博客MyFirstBlog.md这是一个.md的MarkDown文件，技术栈：<a href="http://www.markdown.cn/" target="_blank" rel="noopener">Markdown</a>，或者使用markdown编辑器,这里推荐一个叫<a href="https://www.typora.io/" target="_blank" rel="noopener">Typora</a>的markdown的编辑器，很容易上手。</h6><h6 id="4、生成静态文件、"><a href="#4、生成静态文件、" class="headerlink" title="4、生成静态文件、"></a>4、生成静态文件、</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure><h6 id="5、实现本地预览"><a href="#5、实现本地预览" class="headerlink" title="5、实现本地预览"></a>5、实现本地预览</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p>如果不成功应先安装hexo-server，因为Hexo3.0把服务器独立成了个别模块</p><p>安装hexo-server，命令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure><p>安装完成</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure><p> 启动服务器就可以在localhost:4000本地预览你的博客了</p><p>这里可以参考<a href="https://hexo.io/zh-cn/docs/server" target="_blank" rel="noopener">官方教程</a></p><h2 id="四、部署到GitHub-Coding上"><a href="#四、部署到GitHub-Coding上" class="headerlink" title="四、部署到GitHub/Coding上"></a>四、部署到GitHub/Coding上</h2><h6 id="1、什么是GitHub"><a href="#1、什么是GitHub" class="headerlink" title="1、什么是GitHub"></a>1、什么是<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></h6><p>我们可以看一下<a href="https://baike.baidu.com/item/github/10145341?fr=aladdin" target="_blank" rel="noopener">百度百科</a>怎么说：GitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名GitHub。</p><h6 id="2、Coding"><a href="#2、Coding" class="headerlink" title="2、Coding"></a>2、<a href="https://coding.net/register" target="_blank" rel="noopener">Coding</a></h6><p>可以看作是中国的GitHub，因其服务器在国内，访问起来比较快而且稳定，而且语言为中文相较于GitHub的全英文页面比较友好。</p><h6 id="3、这篇博客是部署在GitHub上的所以我就先以部署在GitHub上为例"><a href="#3、这篇博客是部署在GitHub上的所以我就先以部署在GitHub上为例" class="headerlink" title="3、这篇博客是部署在GitHub上的所以我就先以部署在GitHub上为例"></a>3、这篇博客是部署在GitHub上的所以我就先以部署在GitHub上为例</h6><ul><li><p>创建GitHub账号<a href="https://github.com/" target="_blank" rel="noopener">链接</a></p></li><li><p>新建一个repository，名称为yourname.github.io,其中yourname是刚刚创建的GitHub的名称</p></li><li><p><img src="https://i.loli.net/2018/09/22/5ba63048bab3d.png" alt=""></p></li><li><p>填写好信息点击创建</p></li><li><p><img src="https://i.loli.net/2018/09/22/5ba63172822ca.png" alt=""></p></li><li><p>创建SSH</p><p>在gitbash执行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;yourname@example.com&quot;</span><br></pre></td></tr></table></figure><p>一路回车，根据gitbash给出的路径找到id_rsa.pub用记事本打开全选复制到粘贴版</p><p>回到GitHub的Settings-&gt;SSH and GPG Keys-&gt;New SSH Key把id_rsa.pub里的Key粘贴上，title随便取，如blog。</p></li><li><p>在gitbash 中验证是否添加成功</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure></li><li><p>修改本地_config.yml文件的配置</p><p><img src="https://i.loli.net/2018/09/22/5ba634e0f0f1e.png" alt=""></p></li><li><p>部署到GitHub</p><p>安装hexo-deployr-git上传</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>清空本地缓存文件重新生成静态文件然后部署</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>（之前我一这在这里卡了好久，原因是git版本太低，所以如果到了这一步deploy失败，试试更新git到最新版本）</p><p>deploy成功后就可以到<a href="https://yourname.github.io查看啦" target="_blank" rel="noopener">https://yourname.github.io查看啦</a></p></li></ul><h6 id="4、域名绑定"><a href="#4、域名绑定" class="headerlink" title="4、域名绑定"></a>4、域名绑定</h6><ul><li>因为我还没有注册域名所以这一步敬请期待</li><li>To Be Continue…….</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;基于Windows的Hexo博客搭建&quot;&gt;&lt;a href=&quot;#基于Windows的Hexo博客搭建&quot; class=&quot;headerlink&quot; title=&quot;基于Windows的Hexo博客搭建&quot;&gt;&lt;/a&gt;基于Windows的Hexo博客搭建&lt;/h1&gt;&lt;h2 id=&quot;一
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>local-image-update</title>
+    <link href="http://yoursite.com/2018/08/21/2018-08-21-local-image-update/"/>
+    <id>http://yoursite.com/2018/08/21/2018-08-21-local-image-update/</id>
+    <published>2018-08-21T10:42:36.000Z</published>
+    <updated>2018-09-25T16:01:48.036Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo博客插入图片"><a href="#hexo博客插入图片" class="headerlink" title="hexo博客插入图片"></a>hexo博客插入图片</h1><p><strong>2018-9-26更新：</strong></p><p><strong>把图片上传到这个<a href="https://sm.ms/" target="_blank" rel="noopener">网站</a>在编辑器里贴上链接就行了</strong></p><p><strong>下面的不用看了</strong></p><p>这几天刚刚搭好我的个人博客，想要上传内容却发现有不少问题，比如这个插入本地图片页面不显示的问题，百度了一下发现这个问题还是挺常见的，但是它的解决办法并不适用于我这次遇到的问题，所以觉得有必要记录下来以便自己以后再遇见这样的问题回过头来看这篇博客能有所启发。</p><h2 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h2><p>MarkDown编辑器Typora插入图片时路径显示为电脑上的绝对路径，例如（F:\blog\img\smile.jpg)，在博客所在文件夹下右键gitbash运行命令行<strong>hexo g</strong>(<em>hexo generate</em>),<strong>hexo s</strong>(<em>server</em>)之后在loalhost:4000预览本地页面发现图片无法显示，ok,百度一下：<a href="https://blog.csdn.net/sugar_rainbow/article/details/57415705" target="_blank" rel="noopener">链接</a></p><p><img src="2018-08-21-local-image-update\baidu02.png" alt=""></p><p>emmm…..</p><h2 id="动手填坑"><a href="#动手填坑" class="headerlink" title="动手填坑"></a>动手填坑</h2><p>举个栗子</p><p>修改配置文件，把post_asset_folder:false改为true，运行命令行npm insatll hexo-asset-image –save安装插件，然后hexo new about,在本地博客的_posts下面会生成一个about文件夹和一个about.md文件，typora打开about.md文件编辑：插入图片，Ctrl+s保存，切到gitbash界面hexo  g,hexo s.打开localhost:4000查看文章about,发现</p><p><img src="2018-08-21-local-image-update\before.PNG" alt=""></p><p>因为我迫不及待地部署到了coding上，所以这里可能有些出入，不过影响不大，根据上面那位仁兄的说法我们在public\2018\08\20\about下也能看到这样的情况：</p><p><img src="2018-08-21-local-image-update\then.PNG" alt=""></p><p>回头看一眼网页图片的路径：’img src=”/2018/08/20/about/timg.jpg”‘</p><p>我们尝试着修改路径为’img src=”timg.jpg” 回车！</p><p><img src="2018-08-21-local-image-update\final.PNG" alt=""></p><p>嗯，<strong>真香</strong></p><h2 id="final"><a href="#final" class="headerlink" title="final"></a>final</h2><p>在gitbash敲下hexo d(deploy) 哦 不，敲下回车之前也还来得及（手动滑稽）</p><p>到public\2018\08\20\about文件夹下打开index.html(用编辑器打开哟,聪明的客官老爷们都懂！)，先按照上面的方式修改图片的路径再部署到coding上。</p><p><em>thank you for reading.</em></p><p><strong>Done.</strong></p><p>注：这个方法注定不是长久之计，以后博客数量越来越多，使用的图片等资料也会越来越多，过几日还是倒腾倒腾图床吧</p><p><img src="2018-08-21-local-image-update\menhera01.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;hexo博客插入图片&quot;&gt;&lt;a href=&quot;#hexo博客插入图片&quot; class=&quot;headerlink&quot; title=&quot;hexo博客插入图片&quot;&gt;&lt;/a&gt;hexo博客插入图片&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;2018-9-26更新：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
