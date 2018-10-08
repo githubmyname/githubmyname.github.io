@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-10-08T13:16:27.356Z</updated>
+  <updated>2018-10-08T14:21:09.051Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>搭建酸酸乳实现科学上网</title>
+    <link href="http://yoursite.com/2018/10/08/%E6%90%AD%E5%BB%BA%E9%85%B8%E9%85%B8%E4%B9%B3%E5%AE%9E%E7%8E%B0%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    <id>http://yoursite.com/2018/10/08/搭建酸酸乳实现科学上网/</id>
+    <published>2018-10-08T13:19:23.000Z</published>
+    <updated>2018-10-08T14:21:09.051Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>1、一个国外的VPS</p><p>2、XShell或者Putty</p><p>3、ShadowShocks客户端</p><p>4、一份可靠的教程<img src="https://i.loli.net/2018/10/08/5bbb5b7c2e71f.png" alt=""></p><h2 id="二、开工"><a href="#二、开工" class="headerlink" title="二、开工"></a>二、开工</h2><p>1、VPS以Vultr家的为例进行搭建：<a href="https://www.vultr.com/promo25b/?service=promo25b" target="_blank" rel="noopener">注册地址</a></p><p>新用户注册送25美元，为什么我当时没看到2333</p><p><img src="https://i.loli.net/2018/10/08/5bbb5e79c84dc.png" alt=""></p><p>But,如果上面那条路走不通还是老老实实<a href="https://www.vultr.com/" target="_blank" rel="noopener">正常注册</a>吧</p><p><img src="https://i.loli.net/2018/10/08/5bbb5c9e72850.png" alt=""></p><p><a href="https://my.vultr.com/" target="_blank" rel="noopener">登录</a></p><p><img src="https://i.loli.net/2018/10/08/5bbb5d01e6901.png" alt=""></p><p>充值：如果支付宝充值是灰色的注意把Credit Card支付页面赠送$25的勾选先去掉才能换到Alipay页面</p><p><img src="https://i.loli.net/2018/10/08/5bbb6098da39a.png" alt=""></p><p>2、部署服务器</p><p>点击+号新建服务器，一般选择东京节点或者洛杉矶节点，东京节点比较快但是掉包率比较高（听说），洛杉矶节点一般不会掉包</p><p><strong>前车之鉴</strong>：当初我贪小便宜一开始部署的$2,5/月的服务器，然后它部署ssr脚本的时候老是卡在一半，所以还是建议选用$5/月的服务器</p><p>服务器配置推荐：CentOS 6x64 因为CentOS 7防火墙太厉害了</p><p>Ok，Deploy等几分钟就会看到这个</p><p><img src="https://i.loli.net/2018/10/08/5bbb6342a9b99.png" alt=""></p><p>点进OS下的菊花标查看服务器的详细信息</p><p><strong>注意：不要在任何场合暴露你的IP！</strong></p><p>​       <strong>不要在任何场合暴露你的IP！</strong></p><p>​           <strong>不要在任何场合暴露你的IP！</strong></p><p>也不要随便借自己的账号给他人使用，特别是SB</p><p><strong>不要用于任何违反中华人民共和国宪法及其相关法律的途径</strong></p><p><strong>请自觉学习相关法律：<a href="https://baike.baidu.com/item/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B3%95/16843044?fromtitle=%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%B3%95&amp;fromid=12291792&amp;fr=aladdin" target="_blank" rel="noopener">中华人民共和国网络安全法</a></strong></p><p><img src="https://i.loli.net/2018/10/08/5bbb6403bd01d.png" alt=""></p><p>到这一步先打开cmd命令行界面ping一下你的vps的IP多ping几次，如果没有返回包把服务器删了重新部署，会分给一个新的IP </p><p><img src="https://i.loli.net/2018/10/08/5bbb66dc04b1b.png" alt=""></p><p>3、配置服务器</p><p>3.1安装<a href="https://xshell.en.softonic.com/" target="_blank" rel="noopener">XShell</a>或者<a href="https://www.putty.org/" target="_blank" rel="noopener">Putty</a></p><p>使用方法请自行百度</p><p>3.2一键安装脚本</p><p><a href="https://juejin.im/post/5a936240f265da4e8e788213" target="_blank" rel="noopener">完整教程</a></p><p>或者doub大佬的教程</p><p>mdzz先弃坑，未完待续……</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、准备工作&quot;&gt;&lt;a href=&quot;#一、准备工作&quot; class=&quot;headerlink&quot; title=&quot;一、准备工作&quot;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;p&gt;1、一个国外的VPS&lt;/p&gt;
+&lt;p&gt;2、XShell或者Putty&lt;/p&gt;
+&lt;p&gt;3、ShadowShock
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>基于Windows的Hexo博客搭建</title>
